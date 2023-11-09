@@ -51,7 +51,8 @@ public class Encrypter {
     				arr[i] = (char) (96 + (arr[i]-122));
     			}
     		}
-    		writeFile(String.valueOf(arr),encryptedFilePath);
+    		encrypted = String.valueOf(arr);
+    		writeFile(encrypted,encryptedFilePath);
     	}
     	
     }
